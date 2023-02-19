@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
 {
 	size_t password_len = 0;
 
-	char opt;
+	int opt;
 	const char *short_opts = "l:anduh";
 	struct option long_opts[] =
 	{
