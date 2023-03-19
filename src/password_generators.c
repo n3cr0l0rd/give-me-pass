@@ -5,7 +5,7 @@ static const char *chars = "!\"'@#$%^&*()<>{}[]+-=,.;^:?~/|\\1234567890abcdefghi
 void pass_gen_ascii(const size_t password_len)
 {
 	unsigned rand_char;
-	srandom(time(0));
+	srandom(getpid() + time(NULL));
 
 	puts("------------------------");
 	puts("\x1b[32mВаш пароль:\x1b[0m");
@@ -20,7 +20,7 @@ void pass_gen_ascii(const size_t password_len)
 void pass_gen_nums(const size_t password_len)
 {
 	unsigned rand_char;
-	srandom(time(0));
+	srandom(getpid() + time(NULL));
 
 	puts("------------------------");
 	puts("\x1b[32mВаш пароль:\x1b[0m");
@@ -35,7 +35,7 @@ void pass_gen_nums(const size_t password_len)
 void pass_gen_dalphs(const size_t password_len)
 {
 	unsigned rand_char;
-	srandom(time(0));
+	srandom(getpid() + time(NULL));
 
 	puts("------------------------");
 	puts("\x1b[32mВаш пароль:\x1b[0m");
@@ -50,7 +50,7 @@ void pass_gen_dalphs(const size_t password_len)
 void pass_gen_ualphs(const size_t password_len)
 {
 	unsigned rand_char;
-	srandom(time(0));
+	srandom(getpid() + time(NULL));
 
 	puts("------------------------");
 	puts("\x1b[32mВаш пароль:\x1b[0m");
