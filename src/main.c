@@ -12,7 +12,6 @@ void get_password_length(size_t *pass)
 	char answer;
 	
 	printf("Введите длину пароля: ");
-
 	if((scanf("%lu", pass) != 1) || (!(*pass)))
 	{
 		puts("\x1b[31;1mДлина пароля не может быть нулевой!\x1b[0m");
