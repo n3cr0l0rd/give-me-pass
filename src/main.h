@@ -7,7 +7,6 @@
 #include <stdbool.h>
 #include <string.h>
 #include <time.h>
-#include <ctype.h>
 #include <unistd.h>
 
 void pass_gen_ascii(const size_t password_length);
